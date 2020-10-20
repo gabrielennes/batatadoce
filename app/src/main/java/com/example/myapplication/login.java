@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class login extends AppCompatActivity {
     EditText ed1,ed2;
     Button b1,b2;
 
@@ -15,14 +15,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
 
         ed1 = findViewById(R.id.user);
         ed2 = findViewById(R.id.pass);
 
         b1 = findViewById(R.id.btn1);
         b2 = findViewById(R.id.btn2);
-
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
