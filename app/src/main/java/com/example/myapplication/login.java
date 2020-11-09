@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,8 +44,9 @@ public class login extends AppCompatActivity {
 
         if(username.equals("")|| password.equals("")){
             Toast.makeText(this, "FAVOR DIGITAR AS INFORMACOES CORRETAS", Toast.LENGTH_SHORT).show();
-        }else if(username.equals("san")&& password.equals("123")){
-            Toast.makeText(this, "SEJA BEM VINDO AO SISTEMA", Toast.LENGTH_SHORT).show();
+        }else if(username.equals("admin")&& password.equals("123")){
+            Intent i = new Intent(login.this,Main.class);
+            startActivity(i);
         }else{
             Toast.makeText(this, "USUARIO OU SENHA NÃO CORRESPONDE", Toast.LENGTH_SHORT).show();
         }

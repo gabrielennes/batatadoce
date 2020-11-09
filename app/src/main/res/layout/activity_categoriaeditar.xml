@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".login">
+    tools:context=".CategoriaEditar">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vendas"
+            android:text="Editar / Deletar Categoria"
             android:textColor="#000000"
             android:textSize="30sp" />
 
@@ -30,14 +30,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario:"/>
+            android:text="Categoria ID:"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/user"
+            android:id="@+id/catid"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Digite Usuario"
             android:textAlignment="center"/>
 
     </LinearLayout>
@@ -50,15 +49,33 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senha:"/>
+            android:text="Categoria:"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoria"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descricao:"/>
 
         <EditText
-            android:id="@+id/pass"
+            android:id="@+id/categoriadesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Digite Senha"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -74,7 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
-            android:text="Login"
+            android:text="Editar"
             android:textColor="#000000" />
 
         <Button
@@ -83,10 +100,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
+            android:text="Deletar"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
             android:text="Cancelar"
             android:textColor="#000000" />
 
     </LinearLayout>
-
 
 </LinearLayout>
