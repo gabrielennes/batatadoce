@@ -22,6 +22,16 @@ public class Main extends AppCompatActivity {
         b3 = findViewById(R.id.btn3);
         b6 = findViewById(R.id.btn6);
         b7 = findViewById(R.id.btn7);
+        b8 = findViewById(R.id.btn8);
+
+
+        b8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Main.this,vendasView.class);
+                startActivity(i);
+            }
+        });
 
 
         b7.setOnClickListener(new View.OnClickListener() {

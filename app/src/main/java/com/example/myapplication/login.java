@@ -11,7 +11,7 @@ import android.os.Bundle;
 
 public class login extends AppCompatActivity {
     EditText ed1,ed2;
-    Button b1,b2;
+    Button b1,b2,b3;
 
 
     @Override

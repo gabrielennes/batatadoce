@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".vendasView"></activity>
+        <activity android:name=".Usuario" />
+        <activity android:name=".vendasEditar" />
         <activity android:name=".Vendas" />
         <activity android:name=".produtoEditar" />
         <activity android:name=".produtoView" />
